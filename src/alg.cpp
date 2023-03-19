@@ -3,10 +3,9 @@
 
 
 bool checkPrime(uint64_t value) {
-int val(int n){
-  if(n==1 || n==2 || n==3 || n==5 || n==7)
+  if(value==1 || value==2 || value==3 || value==5 || value==7)
     return true;
-  else if(n%2!=0 && n%3!=0 && n%5!=0 && n%7!=0)
+  else if(value%2!=0 && value%3!=0 && value%5!=0 && value%7!=0)
     return true;
   else
     return false;
