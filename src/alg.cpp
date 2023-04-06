@@ -13,26 +13,28 @@ bool checkPrime(uint64_t value) {
 }
 
 uint64_t nPrime(uint64_t n) {
-  for (int i=0; i < n; i++) {
+  int result;
+  for (uint64_t i=0; i < n; i++) {
     if (i == 1 || i == 2 || i == 3 || i == 5 || i == 7) {
-      return i;
+      result=i;
     } else if (i%2 != 0 && i%3 != 0 && i%5 != 0 && i%7 != 0) {
-      return i;
+      result=i;
     }
   }
+  return result;
 }
 
 uint64_t nextPrime(uint64_t value) {
-  int count=0;
-  if (count!=0) {
+  int result=0;
+  while (result=0)  {
+    value+=1;
     if (value == 1 || value == 2 || value == 3 || value == 5 || value == 7) {
-      return value;
+      result=value;
     } else if (value%2 != 0 && value%3 != 0 && value%5 != 0 && value%7 != 0) {
-      return value;
+      result=value;
     }
   }
-  count+=1;
-  value+=1;
+  return result;
 }
 
 uint64_t sumPrime(uint64_t hbound) {
