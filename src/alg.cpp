@@ -10,7 +10,6 @@ bool checkPrime(uint64_t value) {
   else
     return false;
 }
-}
 
 uint64_t nPrime(uint64_t n) {
   for(int i=0; i<n;i++){
