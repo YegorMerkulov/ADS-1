@@ -14,6 +14,7 @@ bool checkPrime(uint64_t value) {
 }
 
 uint64_t nPrime(uint64_t n) {
+  n+=1;
   int result = 0;
   while (result == 0) {
     if (n == 1 || n == 2 || n == 3 || n == 5 || n == 7) {
