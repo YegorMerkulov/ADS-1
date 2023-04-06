@@ -13,20 +13,22 @@ bool checkPrime(uint64_t value) {
 
 uint64_t nPrime(uint64_t n) {
   for (int i=0; i<n; i++) {
-    if (i==1 || i==2 || i==3 || i==5 || i==7)
+    if (i==1 || i==2 || i==3 || i==5 || i==7) {
       return i;
-    else if (i%2!=0 && i%3!=0 && i%5!=0 && i%7!=0)
+    } else if (i%2!=0 && i%3!=0 && i%5!=0 && i%7!=0) {
       return i;
+    }
   }
 }
 
 uint64_t nextPrime(uint64_t value) {
   int count=0;
-  if (count!=0)
-    if (value==1 || value==2 || value==3 || value==5 || value==7)
+  if (count!=0) {
+    if (value==1 || value==2 || value==3 || value==5 || value==7) {
       return value;
-    else if (value%2!=0 && value%3!=0 && value%5!=0 && value%7!=0)
+    } else if (value%2!=0 && value%3!=0 && value%5!=0 && value%7!=0) {
       return value;
+    }
   count+=1;
   value+=1;
 }
