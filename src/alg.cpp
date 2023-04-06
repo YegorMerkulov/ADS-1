@@ -29,6 +29,7 @@ uint64_t nextPrime(uint64_t value) {
     } else if (value%2!=0 && value%3!=0 && value%5!=0 && value%7!=0) {
       return value;
     }
+  }
   count+=1;
   value+=1;
 }
