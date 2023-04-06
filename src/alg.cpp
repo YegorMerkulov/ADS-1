@@ -45,6 +45,7 @@ uint64_t sumPrime(uint64_t hbound) {
   } else if (hbound%2 != 0 && hbound%3 != 0 && hbound%5 != 0 && hbound%7 != 0) {
     sum+=hbound;
     return hbound+1;
-  } else
+  } else {
     return hbound+1;
+  }
 }
