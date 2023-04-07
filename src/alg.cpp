@@ -5,8 +5,8 @@
 
 
 bool checkPrime(uint64_t value) {
-  for (int i = 2; i < sqrt(value); i++){
-    if (value%i != 0){
+  for (int i = 2; i < sqrt(value); i++) {
+    if (value%i != 0) {
       return true;
     } else {
       return false;
