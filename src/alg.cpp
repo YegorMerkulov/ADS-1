@@ -35,7 +35,7 @@ uint64_t nextPrime(uint64_t value) {
 uint64_t sumPrime(uint64_t hbound) {
   int sum = 0;
   int n = 1;
-  while (hbound <= nextPrime(n)) {
+  while (hbound >= nextPrime(n)) {
       sum+=nextPrime(n);
       n = nextPrime(n);
   }
