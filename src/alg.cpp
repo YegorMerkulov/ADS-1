@@ -29,7 +29,7 @@ uint64_t nextPrime(uint64_t value) {
   while (checkPrime(i) == false) {
     i+=1;
   }
-   return i 
+  return i;
 }
 
 uint64_t sumPrime(uint64_t hbound) {
