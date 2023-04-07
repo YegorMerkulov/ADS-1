@@ -17,13 +17,13 @@ uint64_t nPrime(uint64_t n) {
   int i = 0;
   int count = 0;
   while (true) {
-    i+=1;
     if (checkPrime(i)) {
       count+=1;
     }
-    if (count == n) {
+    if (count == n+1) {
       return i;
     }
+     i+=1;
   }
 }
 
