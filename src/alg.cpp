@@ -4,12 +4,12 @@
 
 
 bool checkPrime(uint64_t value) {
-  if (value == 2 || value == 3 || value == 5 || value == 7) {
-    return true;
-  } else if (value%2 != 0 && value%3 != 0 && value%5 != 0 && value%7 != 0) {
-    return true;
-  } else {
-    return false;
+  for (int i = 2; i<sqrt(value);i++){
+    if (value%i!=0){
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 
@@ -20,7 +20,7 @@ uint64_t nPrime(uint64_t n) {
     if (checkPrime(i)) {
       count+=1;
     }
-    if (count == n+1) {
+    if (count == n) {
       return i;
     }
      i+=1;
